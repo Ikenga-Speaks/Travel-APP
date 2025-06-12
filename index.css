@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&family=Special+Gothic&family=Special+Gothic+Condensed+One&display=swap');
 
 * {
@@ -23,10 +24,6 @@
     /* background-blend-mode: overlay; */
     height: 100vh;
     width: 100%;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* color: var(--White); */
 }
 
 header {
@@ -35,16 +32,19 @@ header {
     position: sticky;
     top: 0;
     z-index: 100;
-    /* color: var(--White); */
 }
 
 .navbar {
-    background: none;
-    /* Transparent background */
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+#navbarNav {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: var(--Cocoa-Bean);
+    font-weight: bold;
 }
 
 .nav-item {
@@ -204,11 +204,6 @@ header {
     gap: 20px;
     margin: 0 70px;
 }
-.chooseimg img{
-    /* width: 150%; */
-    /* margin-right: 30px; */
-    /* height: 100vh; */
-}
 .choosewriteup{
     text-align: justify;
     margin-top: 30px;
@@ -307,9 +302,6 @@ header {
 .newsletterform .newsp{
     font-size: 1rem;
     font-weight: 700;
-}
-.newsletterform input{
-    /* margin-left: 180px; */
 }
 .newsletterform .btn{
     /* border-top-left-radius: 20px; */

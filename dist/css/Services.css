@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=National+Park:wght@200..800&family=Special+Gothic&family=Special+Gothic+Condensed+One&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Manrope", sans-serif;
+}
+/* menu section */
+header {
+    background: var(--White);
+    padding: 8px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: center;
+}
+
+#navbarNav {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: var(--Cocoa-Bean);
+    font-weight: bold;
+}
+
+#navbarNav .btn {
+    background: var(--Cocoa-Bean);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+#navbarNav .btn:hover{
+    background: var(--Swiss-Coffee);
+    color: var(--Cocoa-Bean);
+    transition: 0.3s ease-in-out;
+}
+.nav-item:hover {
+    text-decoration: underline;
+    color: var(--Cocoa-Bean);
+    transition: 0.3s ease-in-out;
+}
+/* dashboard section */
+.dashboard{
+    background: url('/dist/assets/about_img/about2.svg') no-repeat center/cover;
+    /* background-color: rgba(31, 30, 30, 0.4); */
+    background-blend-mode: overlay;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+}
+.dashboard h2{
+    text-align: center;
+}
+.dashboard p{
+    text-align: left;
+    margin-top: 340px;
+    /* margin-right: 200px; */
+}
+.trip_btn button{
+    background: var(--Cocoa-Bean);
+    color: var(--White);
+    border-radius: 20px;
+    padding: 10px 15px;
+}
+/* .trip_btn:hover{
+    background: var(--Swiss-Coffee);
+    color: var(--Cocoa-Bean);
+    transition: 0.3s ease-in-out;
+} */
+
+
+
