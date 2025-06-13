@@ -8,6 +8,11 @@
 
 }
 
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
 :root {
     --Cocoa-Bean: rgba(92, 32, 32, 1);
     --Swiss-Coffee: #ded2d2;
@@ -18,7 +23,7 @@
 }
 
 .headcontainer {
-    background: url(dist/assets/landing_img/home1.svg);
+    background: url(dist/assets/landing_img/home1.svg)no-repeat center/cover;
     height: 100vh;
     width: 100%;
 }
@@ -172,7 +177,7 @@ header {
     font-weight: bold;
     transition: background-color 0.3s ease-in-out;
     cursor: pointer;
-    
+
 }
 
 .search-btn:hover {
@@ -198,6 +203,7 @@ header {
     gap: 20px;
 
 }
+
 .formC {
     position: fixed;
     top: 50%;
@@ -429,10 +435,25 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 850px) { 
-    .navbar{
+@media screen and (max-width: 850px) {
+    #login {
+        background: var(--Cocoa-Bean);
+        color: var(--White);
+        border-radius: 20px;
+        border: none;
+        padding: 8px 15px;
+        font-weight: bold;
+    }
+    #login:hover {
+    background: var(--Swiss-Coffee);
+    color: var(--Cocoa-Bean);
+    transition: 0.3s ease-in-out;
+    }
+
+    .navbar {
         padding: 5px 0;
     }
+
     .navbar-collapse {
         position: absolute;
         top: 100%;
@@ -441,20 +462,25 @@ footer {
         background: var(--White);
         z-index: 100;
     }
+
     .navbar-collapse.show {
         background: var(--White);
     }
-    .navbar-nav{
+
+    .navbar-nav {
         margin: 0;
         padding: 10px 15px;
         width: 100%;
     }
+
     .navbar-collapse.show .nav-link {
         color: var(--Cocoa-Bean);
     }
+
     .navbar-collapse.show .nav-item.active .nav-link {
         color: var(--Cocoa-Bean-Bright);
     }
+
     .navbar-collapse.show .nav-item:hover:not(.login) .nav-link {
         color: var(--Cocoa-Bean);
     }
@@ -496,11 +522,11 @@ footer {
     }
 
     .searchstyle {
-        margin: 55px 45px;
+        margin: 95px 45px;
         /* Reduced margins for mobile */
         padding: 10px;
         width: auto;
-        position: relative; 
+        position: relative;
     }
 
     .search-container {
