@@ -23,7 +23,9 @@ body {
 }
 
 .headcontainer {
-    background: url(dist/assets/landing_img/home1.svg)no-repeat center/cover;
+    /*     background: linear-gradient(337.82deg, rgba(31, 30, 30, 0.1) 17.5%, rgba(31, 30, 30, 0.6) 71.79%, rgba(255, 255, 255, 0.4) 85.92%);
+ */
+    background:   linear-gradient(337.82deg, rgba(31, 30, 30, 0.1) 17.5%, rgba(31, 30, 30, 0.6) 71.79%, rgba(255, 255, 255, 0.4) 85.92%),url(dist/assets/landing_img/home1.svg)no-repeat center/cover;
     height: 100vh;
     width: 100%;
 }
@@ -37,6 +39,7 @@ header {
     right: 0;
     z-index: 100;
     box-shadow: 0 0 20px rgb(30, 30, 30, 0.5);
+
 
 }
 
@@ -81,7 +84,7 @@ header {
     color: var(--White);
     border-radius: 20px;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 44px;
     font-weight: bold;
 }
 
@@ -150,9 +153,11 @@ header {
 
 .search-input {
     padding-left: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 
     /* Space for the icon */
-    border: 2px solid var(--Cocoa-Bean);
+    border: none;
     border-radius: 20px;
     font-size: 1rem;
     font-weight: 500;
@@ -180,9 +185,9 @@ header {
 .search-btn {
     background: var(--Cocoa-Bean);
     color: var(--White);
-    border-radius: 20px;
+    border-radius: 50px;
     border: none;
-    padding: 10px 45px;
+    padding: 15px 24px;
     font-size: 1rem;
     font-weight: bold;
     transition: background-color 0.3s ease-in-out;
@@ -391,6 +396,19 @@ header {
     font-size: 1rem;
     font-weight: 700;
 }
+#newsInp{
+    padding: 13px 10px;
+    border: none;
+    outline: none;
+    width: 80%;
+}
+#newsInp:focus{
+    background: var(--Hint-of-Red);
+    transition: .4s;
+    outline: 2px solid var(--Cocoa-Bean);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
 
 .newsletterform .btn {
     /* border-top-left-radius: 20px; */
@@ -398,6 +416,14 @@ header {
     right: 8px;
     background: var(--Cocoa-Bean);
     color: var(--White);
+    background: var(--Cocoa-Bean);
+    color: var(--primary-white);
+    padding: 13px 20px;
+    border: none;
+    position: relative;
+    left: -10px;
+    border-top-left-radius: 21px;
+    cursor: pointer;
 }
 
 .newsletterform .btn:hover {
@@ -551,7 +577,6 @@ footer {
 
     .search-input {
         font-size: 0.9rem;
-
     }
 
     .search-icon {
@@ -566,7 +591,7 @@ footer {
         width: 100%;
         margin: 10px auto;
         /* Space between input and button */
-        padding: 8px;
+        padding: 15px 0;
         font-size: 0.9rem;
     }
 

@@ -65,7 +65,7 @@ header {
     color: var(--White);
     border-radius: 20px;
     border: none;
-    padding: 8px 15px;
+    padding: 10px 44px;
     font-weight: bold;
 }
 
@@ -93,7 +93,7 @@ h2{
 }
 
 .form{
-    margin: 90px 120px;
+    margin: 90px 470px;
 }
 .form div{
     display: flex;
@@ -124,23 +124,6 @@ h2{
     color: var(--White);
     padding: 15px 0;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

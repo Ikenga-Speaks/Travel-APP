@@ -42,7 +42,10 @@ header {
     background: var(--Cocoa-Bean);
     color: var(--White);
     border-radius: 20px;
-    padding: 10px 15px;
+    border: none;
+    padding: 10px 44px;
+    font-weight: bold;
+
 }
 #navbarNav .btn:hover{
     background: var(--Swiss-Coffee);
