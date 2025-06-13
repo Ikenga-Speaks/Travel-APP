@@ -16,6 +16,7 @@
 }
 
 header {
+    box-shadow: 0 0 20px rgb(30, 30, 30, 0.5);
     background: var(--White);
     padding: 8px 20px;
     position: sticky;
@@ -42,6 +43,12 @@ header {
     color: var(--White);
     border-radius: 20px;
     padding: 10px 15px;
+}
+.nav-item.active .nav-link {
+    color: var(--Cocoa-Bean-Bright);
+    /* Brighter Cocoa-Bean for active item */
+    text-decoration: underline;
+    font-weight: bold;
 }
 #navbarNav .btn:hover{
     background: var(--Swiss-Coffee);

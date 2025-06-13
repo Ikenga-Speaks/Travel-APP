@@ -16,6 +16,7 @@
 }
 /* menu section */
 header {
+    box-shadow: 0 0 20px rgb(30, 30, 30, 0.5);
     background: var(--White);
     padding: 8px 20px;
     position: sticky;
@@ -48,6 +49,12 @@ header {
     color: var(--Cocoa-Bean);
     transition: 0.3s ease-in-out;
 }
+.nav-item.active .nav-link {
+    color: var(--Cocoa-Bean-Bright);
+    /* Brighter Cocoa-Bean for active item */
+    text-decoration: underline;
+    font-weight: bold;
+}
 .nav-item:hover {
     text-decoration: underline;
     color: var(--Cocoa-Bean);
@@ -55,7 +62,7 @@ header {
 }
 /* dashboard section */
 .dashboard{
-    background: url('/dist/assets/about_img/about2.svg') no-repeat center/cover;
+    background: url('/dist/assets/services_img/services_land.png') no-repeat center/cover;
     /* background-color: rgba(31, 30, 30, 0.4); */
     background-blend-mode: overlay;
     height: 100vh;
