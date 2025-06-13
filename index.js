@@ -5,17 +5,42 @@
 //     });
 //   });
 
-document.querySelectorAll('.nav-link[data-section]').forEach(link => {
-  link.addEventListener('click', () => {
-    const section = link.getAttribute('data-section');
+document.querySelectorAll(".nav-link[data-section]").forEach((link) => {
+  link.addEventListener("click", () => {
+    const section = link.getAttribute("data-section");
 
-    if (section === 'home') {
-      window.location.href = 'index.html'; // Navigate to index.html
-    } else {
-      window.location.href = section + '.html'; // Navigate to section.html
+    if (section === "home") {
+      window.location.href = "index.html"; // Navigate to index.html
+    } else if (section === "services") {
+      window.location.href = "Services.html"; // Navigate to services.html
+    } else if (section === "about") {
+      window.location.href = "about.html";
+    } else if (section === "contact") {
+      window.location.href = "contact.html"; // Navigate to contact.html
     }
   });
 });
+
+// This function is to validate the serach feature on the Home Page
+let searchInput = document.getElementById("search-term");
+const getSearchTerm = () => {
+  if (searchInput.value === "") {
+    alert("Please Enter a location")
+  }else{
+    alert(`Sorry, there are no results matching '${searchInput.value}' right now`)
+  };
+  searchInput.value = ""
+};
+// Search when user hits the enter key
+searchInput.addEventListener("keypress", (event) => {
+  if (event.key === "Enter") {
+    getSearchTerm();
+  }
+});
+
+
+// I am adding the function executor to the butto in the index.html
+
 
 
 const BookNowBtn = document.querySelectorAll(".btn-primary");

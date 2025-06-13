@@ -29,10 +29,15 @@ body {
 }
 
 header {
-    background: none;
-    position: sticky;
+    background: rgba(30, 30, 30, 0.5);
+    /* background: var(--Cocoa-Bean-Bright); */
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
+    box-shadow: 0 0 20px rgb(30, 30, 30, 0.5);
+
 }
 
 .navbar {
@@ -50,6 +55,7 @@ header {
     cursor: pointer;
     color: var(--Cocoa-Bean);
     font-weight: bold;
+    z-index: 100;
 }
 
 .nav-item {
@@ -111,6 +117,10 @@ header {
     position: relative;
     top: 5rem;
     padding: 25px 0;
+}
+.sectionhome{
+    position: relative;
+    top: 90px;
 }
 
 .homecontent p {
@@ -212,6 +222,7 @@ header {
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
     z-index: 200;
+    display: none;
 }
 
 .card-title {
@@ -436,6 +447,10 @@ footer {
 }
 
 @media screen and (max-width: 850px) {
+    .sectionhome{
+        position: relative;
+        top: 0;
+    }
     #login {
         background: var(--Cocoa-Bean);
         color: var(--White);
@@ -546,7 +561,8 @@ footer {
 
     .search-btn {
         display: block;
-        width: auto;
+        /* Width 100% makes sure it adjuts authomatically to diff screens */
+        width: 100%;
         margin: 10px auto;
         /* Space between input and button */
         padding: 8px;
