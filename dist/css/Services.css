@@ -6,6 +6,15 @@
     box-sizing: border-box;
     font-family: "Manrope", sans-serif;
 }
+
+:root {
+    --Cocoa-Bean: rgba(92, 32, 32, 1);
+    --Swiss-Coffee: #ded2d2;
+    --Hint-of-Red: rgba(248, 246, 246, 1);
+    --Linear-gradient: linear-gradient(to right, rgba(194, 68, 68, 1), rgba(18, 6, 6, 1));
+    --White: #ffffff;
+    --Mine-Shaft: #333333;
+}
 /* menu section */
 header {
     background: var(--White);

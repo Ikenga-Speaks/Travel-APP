@@ -13,7 +13,7 @@
     <div class="parentcontainer">
         <div class="headcontainer">
             <header>
-                <nav class="navbar navbar-expand-lg" >
+                <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                             data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
@@ -49,14 +49,19 @@
                     <p>Plan trips effortlessly, book flights, and explore destinations with personalized <br>
                         recommendations—all in one sleek, easy-to-use platform.</p>
                 </div>
-                <div class="input-btn">
-                    <div class="input-group mb-3" id="input-group">
-                        <span class="input-group-text" id="basic-addon1"><i class="fa-brands fa-searchengin"></i></span>
-                        <input type="text" class="form-control" placeholder="Enter a place you would like to visit"
-                            aria-label="Username" aria-describedby="basic-addon1" id="inputId"><button type="button"
-                            class="btn btn-outline-light" style="border-radius: 20px;">See all Destinations</button>
+                <div class="searchstyle">
+                    <div class="search-container">
+                        <div class="position-relative flex-grow-1">
+                            <svg class="search-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                fill="currentColor" viewBox="0 0 16 16">
+                                <path
+                                    d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                            </svg>
+                            <input type="text" class="form-control search-input" placeholder="Enter a place you would like to visit"
+                                aria-label="Search">
+                        </div>
+                        <div><button class="btn search-btn">See all Destinations</button></div>
                     </div>
-
                 </div>
             </section>
         </div>
@@ -103,7 +108,7 @@
                         <img src="dist/assets/landing_img/home4.svg" class="card-img-top" alt="...">
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">Niagra Water Falls</h5>
-                            <p class="card-text"><small>>Manchester, UK</small></p>
+                            <p class="card-text"><small>Manchester, UK</small></p>
                             <div class="mt-auto">
                                 <div class="cardrating">
                                     <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
@@ -133,282 +138,313 @@
                     </div>
                 </div>
             </div>
+        </section>
 
-    </div>
-    </section>
-
-    <section class="visitedplaces">
-        <h2>Discover New Destination</h2>
-        <div class="row g-3">
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100">
-                    <img src="dist/assets/landing_img/home6.svg" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Washington’s House</h5>
-                        <p class="card-text"><small>Rome, Italy</small></p>
-                        <div class="mt-auto">
-                            <div class="cardrating">
-                                <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
-                                <div class="card-amount">$800</div>
+        <section class="visitedplaces">
+            <h2>Discover New Destination</h2>
+            <div class="row g-3">
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="dist/assets/landing_img/home6.svg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Washington’s House</h5>
+                            <p class="card-text"><small>Rome, Italy</small></p>
+                            <div class="mt-auto">
+                                <div class="cardrating">
+                                    <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
+                                    <div class="card-amount">$800</div>
+                                </div>
+                                <button class="btn btn-primary mt-2"><span>Book</span> <span><i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
                             </div>
-                            <button class="btn btn-primary mt-2"><span>Book</span> <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="dist/assets/landing_img/home7.svg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Palm Beach</h5>
+                            <p class="card-text"><small>Manchester, UK</small></p>
+                            <div class="mt-auto">
+                                <div class="cardrating">
+                                    <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
+                                    <div class="card-amount">$800</div>
+                                </div>
+                                <button class="btn btn-primary mt-2"><span>Book</span> <span><i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="dist/assets/landing_img/home8.svg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Eiffel Tower</h5>
+                            <p class="card-text"><small>Maryland, USA</small></p>
+                            <div class="mt-auto">
+                                <div class="cardrating">
+                                    <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
+                                    <div class="card-amount">$800</div>
+                                </div>
+                                <button class="btn btn-primary mt-2"><span>Book</span> <span><i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                    <div class="card h-100">
+                        <img src="dist/assets/landing_img/home9.svg" class="card-img-top" alt="...">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">Lovely Garden</h5>
+                            <p class="card-text"><small>Rome, Italy</small></p>
+                            <div class="mt-auto">
+                                <div class="cardrating">
+                                    <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
+                                    <div class="card-amount">$800</div>
+                                </div>
+                                <button class="btn btn-primary mt-2"><span>Book</span> <span><i
+                                            class="fa-solid fa-arrow-right"></i></span></button>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100">
-                    <img src="dist/assets/landing_img/home7.svg" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Palm Beach</h5>
-                        <p class="card-text"><small>Manchester, UK</small></p>
-                        <div class="mt-auto">
-                            <div class="cardrating">
-                                <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
-                                <div class="card-amount">$800</div>
-                            </div>
-                            <button class="btn btn-primary mt-2"><span>Book</span> <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
+        </section>
+        <section>
+            <div class="formC shadow-lg p-3 mb-5 bg-body-tertiary rounded"
+                style="position: absolute; left: 0; right: 0; top: 0; margin: 0 50px; background: #f3f3f3; padding: 20px 30px;">
+                <form action="" id="formEl">
+                    <div class="mb-3">
+                        <h1>Confirm your booking for <span id="houseLocate"></span></h1>
+                    </div>
+                    <div class="mb-3">
+                        <label for="houseName" class="form-label">House Name</label>
+                        <input type="email" class="form-control" id="houseName" placeholder="" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="houseLocation" class="form-label">House Location</label>
+                        <input type="text" class="form-control" id="houseLocation" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="housePrice" class="form-label">Amount</label>
+                        <input type="tel" class="form-control" id="housePrice" readonly>
+                    </div>
+                    <div class="mb-3">
+                        <label for="housePrice" class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Your name" id="housePrice" required>
+                    </div>
+                    <div class="mb-3">
+                        <label for="housePrice" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="housePrice" placeholder="Enter your email address"
+                            required>
+                    </div>
+                    <div class="mb-3">
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
+
+        <!-- Why Choose Us Section -->
+        <section id="choose" class="choose">
+            <h2 id="chooseId">Why Choose Us</h2>
+            <div class="choosecontent">
+                <div class="chooseimg">
+                    <img src="dist/assets/landing_img/home10.svg" alt="">
+                </div>
+                <div class="choosewriteup">
+                    <p>With our travel agency app, planning your next adventure has
+                        never been easier. We combine expert-curated experiences,
+                        real-time bookings, and personalized recommendations—all in
+                        one place. Whether you're looking for a quick getaway or a dream
+                        vacation, our app offers convenience, flexibility, and trusted
+                        support every step of the way. We work with top-rated travel
+                        partners to bring you exclusive deals and unforgettable
+                        experiences. Our user-friendly interface makes it easy to explore,
+                        book, and manage your trips in just a few taps. Plus, our
+                        dedicated support team is always available to assist you—before,
+                        during, and after your journey.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Section -->
+        <section class="ourservices">
+            <h2>Our services</h2>
+            <div class="ourservice-content">
+                <div>
+                    <img src="dist/assets/landing_img/home11.svg" alt="">
+                    <h3>Book Flights</h3>
+                    <p>We facilitate your trips overseas by
+                        providing a hitch-free booking
+                        experience.
+                    </p>
+                </div>
+                <div>
+                    <img src="dist/assets/landing_img/home12.svg" alt="">
+                    <h3>Hotel Reservation</h3>
+                    <p>With us, you can lodge at exquisite
+                        hotels that offer excellent services.
+                        We also have well equipped gyms.</p>
+                </div>
+                <div>
+                    <img src="dist/assets/landing_img/home13.svg" alt="">
+                    <h3>Car Rentals</h3>
+                    <p>We make your journeys easier. We
+                        are a click away from rendering our
+                        services to you.</p>
+                </div>
+                <div>
+                    <img src="dist/assets/landing_img/home14.svg" alt="">
+                    <h3>Visa Assurance</h3>
+                    <p>We assist you secure a visa to your
+                        preferred travel destinations. </p>
+                </div>
+                <div>
+                    <img src="dist/assets/landing_img/home15.svg" alt="">
+                    <h3>Itinerary Planning</h3>
+                    <p>We help you enjoy a seamless travel
+                        plan.</p>
+                </div>
+                <div>
+                    <img src="dist/assets/landing_img/home16.svg" alt="">
+                    <h3>Currency Exchange</h3>
+                    <p>We help you ease the burden of
+                        currency exchange which could
+                        prevent you from enjoying your trip. </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Client Review Section -->
+        <section class="clientreview">
+            <h2>Client Reviews</h2>
+            <div class="review">
+                <div class="reviewtable">
+                    <div class="reviewcontent">
+                        <div>
+                            <img src="dist/assets/landing_img/home17.svg" alt="">
+                        </div>
+                        <div class="reviewplus">
+                            <h3>Jane Merson</h3>
+                            <p><small>Dentist</small></p>
+                            <span class="star" style="color:gold;">★ ★ ★ ★ ★</span>
+
                         </div>
                     </div>
+                    <p>Using this app has completely transformed the way I
+                        travel. From finding hidden gems in each city to booking
+                        last-minute accommodations. Everything has been
+                        seamless and stress-free. The personalized
+                        recommendations were spot on and the interface was
+                        super easy to use. I can’t imagine planning a trip without
+                        it now.</p>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100">
-                    <img src="dist/assets/landing_img/home8.svg" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Eiffel Tower</h5>
-                        <p class="card-text"><small>Maryland, USA</small></p>
-                        <div class="mt-auto">
-                            <div class="cardrating">
-                                <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
-                                <div class="card-amount">$800</div>
-                            </div>
-                            <button class="btn btn-primary mt-2"><span>Book</span> <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
+                <div class="reviewtable">
+                    <div class="reviewcontent">
+                        <div>
+                            <img src="dist/assets/landing_img/home18.svg" alt="">
+                        </div>
+                        <div class="reviewplus">
+                            <h3>Jane Merson</h3>
+                            <p><small>Content Creator</small></p>
+                            <span style="color:gold;">★ ★ ★ ★ ★</span>
                         </div>
                     </div>
+                    <p>My experience using this app has been unprecedented. It
+                        gives me options for an enjoyable tour to my travel
+                        destinations. I love how easy it is to access everything. I’m
+                        a big fan of scuba diving. On this app, I have seen options for
+                        scuba diving. I rate this app highly and I can recommend
+                        it to anyone who wants to enjoy travel luxury.</p>
                 </div>
-            </div>
-            <div class="col-12 col-sm-6 col-md-4 col-lg-3">
-                <div class="card h-100">
-                    <img src="dist/assets/landing_img/home9.svg" class="card-img-top" alt="...">
-                    <div class="card-body d-flex flex-column">
-                        <h5 class="card-title">Lovely Garden</h5>
-                        <p class="card-text"><small>Rome, Italy</small></p>
-                        <div class="mt-auto">
-                            <div class="cardrating">
-                                <div style="font-size: 1.5rem; color: gold;">★ ★ ★ ★ ★</div>
-                                <div class="card-amount">$800</div>
-                            </div>
-                            <button class="btn btn-primary mt-2"><span>Book</span> <span><i
-                                        class="fa-solid fa-arrow-right"></i></span></button>
+                <div class="reviewtable1">
+                    <div class="reviewcontent">
+                        <div>
+                            <img src="dist/assets/landing_img/home17.svg" alt="">
+                        </div>
+                        <div class="reviewplus">
+                            <h3>Bill Johnson</h3>
+                            <p><small>Architect</small></p>
+                            <span style="color:gold;">★ ★ ★ ★ ★</span>
                         </div>
                     </div>
+                    <p>This app has redefined how I approach travel planning. Rather than searching multiple sources, I
+                        now have access to a centralized platform that offers curated experiences suited to various
+                        tastes and interests. The design is sleek, navigation is intuitive, and the entire process feels
+                        effortless.</p>
                 </div>
             </div>
-        </div>
-    </section>
+            <div class="reviewcontrol">
+                <div><img src="dist/assets/landing_img/home19.svg" alt=""></div>
+                <div><img src="dist/assets/landing_img/home20.svg" alt=""></div>
+            </div>
+        </section>
 
-    <!-- Why Choose Us Section -->
-    <section id="choose" class="choose">
-        <h2 id="chooseId">Why Choose Us</h2>
-        <div class="choosecontent">
-            <div class="chooseimg">
-                <img src="dist/assets/landing_img/home10.svg" alt="">
-            </div>
-            <div class="choosewriteup">
-                <p>With our travel agency app, planning your next adventure has
-                    never been easier. We combine expert-curated experiences,
-                    real-time bookings, and personalized recommendations—all in
-                    one place. Whether you're looking for a quick getaway or a dream
-                    vacation, our app offers convenience, flexibility, and trusted
-                    support every step of the way. We work with top-rated travel
-                    partners to bring you exclusive deals and unforgettable
-                    experiences. Our user-friendly interface makes it easy to explore,
-                    book, and manage your trips in just a few taps. Plus, our
-                    dedicated support team is always available to assist you—before,
-                    during, and after your journey.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Service Section -->
-    <section class="ourservices">
-        <h2>Our services</h2>
-        <div class="ourservice-content">
-            <div>
-                <img src="dist/assets/landing_img/home11.svg" alt="">
-                <h3>Book Flights</h3>
-                <p>We facilitate your trips overseas by
-                    providing a hitch-free booking
-                    experience.
-                </p>
-            </div>
-            <div>
-                <img src="dist/assets/landing_img/home12.svg" alt="">
-                <h3>Hotel Reservation</h3>
-                <p>With us, you can lodge at exquisite
-                    hotels that offer excellent services.
-                    We also have well equipped gyms.</p>
-            </div>
-            <div>
-                <img src="dist/assets/landing_img/home13.svg" alt="">
-                <h3>Car Rentals</h3>
-                <p>We make your journeys easier. We
-                    are a click away from rendering our
-                    services to you.</p>
-            </div>
-            <div>
-                <img src="dist/assets/landing_img/home14.svg" alt="">
-                <h3>Visa Assurance</h3>
-                <p>We assist you secure a visa to your
-                    preferred travel destinations. </p>
-            </div>
-            <div>
-                <img src="dist/assets/landing_img/home15.svg" alt="">
-                <h3>Itinerary Planning</h3>
-                <p>We help you enjoy a seamless travel
-                    plan.</p>
-            </div>
-            <div>
-                <img src="dist/assets/landing_img/home16.svg" alt="">
-                <h3>Currency Exchange</h3>
-                <p>We help you ease the burden of
-                    currency exchange which could
-                    prevent you from enjoying your trip. </p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Client Review Section -->
-    <section class="clientreview">
-        <h2>Client Reviews</h2>
-        <div class="review">
-            <div class="reviewtable">
-                <div class="reviewcontent">
-                    <div>
-                        <img src="dist/assets/landing_img/home17.svg" alt="">
+        <section class="newslettersection">
+            <div class="newsletter">
+                <h2>Stay in the Know with <br>
+                    Moj Travels</h2>
+                <div class="newsletterform">
+                    <div class="newsp">
+                        <p>Wander often. Dream big. Travel smart.</p>
                     </div>
-                    <div class="reviewplus">
-                        <h3>Jane Merson</h3>
-                        <p><small>Dentist</small></p>
-                        <span class="star" style="color:gold;">★ ★ ★ ★ ★</span>
+                    <div class="input-group mb-3">
+                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
+                            aria-describedby="button-addon2">
+                        <button class="btn btn-outline-danger"
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 0;" type="button"
+                            id="button-addon2">Subscribe</button>
+                    </div>
 
+                </div>
+                <div class="news">
+                    <p>Subscribe to our newsletter and be the first to discover:</p>
+                    <ul>
+                        <li>Exclusive travel deals & honeymoon packages</li>
+                        <li>Expert tips for unforgettable adventures</li>
+                        <li>Hidden gems and must-visit destinations</li>
+                        <li>Special offers just for our subscribers</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="footer-content">
+                <div class="footer1">
+                    <h3>MOJ</h3>
+                    <p>Quality all round</p>
+                    <div class="copyright1">&copy; Copyright 2025 Inc</div>
+                </div>
+                <div class="footerSection">
+                    <div class="footer-section">
+                        <h3>About</h3>
+                        <p>Our Story</p>
+                        <p>Our Team</p>
+                        <p>Resources</p>
+                        <p>Terms of Service</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Support</h3>
+                        <p>FAQ</p>
+                        <p>Contact Us</p>
+                        <p>Help Center</p>
+                    </div>
+                    <div class="footer-section">
+                        <h3>Social</h3>
+                        <p>Instagram</p>
+                        <p>Facebook</p>
+                        <p>Twitter (X)</p>
+                        <div class="copyright2">&copy; Copyright 2025 Inc</div>
                     </div>
                 </div>
-                <p>Using this app has completely transformed the way I
-                    travel. From finding hidden gems in each city to booking
-                    last-minute accommodations. Everything has been
-                    seamless and stress-free. The personalized
-                    recommendations were spot on and the interface was
-                    super easy to use. I can’t imagine planning a trip without
-                    it now.</p>
             </div>
-            <div class="reviewtable">
-                <div class="reviewcontent">
-                    <div>
-                        <img src="dist/assets/landing_img/home18.svg" alt="">
-                    </div>
-                    <div class="reviewplus">
-                        <h3>Jane Merson</h3>
-                        <p><small>Content Creator</small></p>
-                        <span style="color:gold;">★ ★ ★ ★ ★</span>
-                    </div>
-                </div>
-                <p>My experience using this app has been unprecedented. It
-                    gives me options for an enjoyable tour to my travel
-                    destinations. I love how easy it is to access everything. I’m
-                    a big fan of scuba diving. On this app, I have seen options for
-                    scuba diving. I rate this app highly and I can recommend
-                    it to anyone who wants to enjoy travel luxury.</p>
-            </div>
-            <div class="reviewtable1">
-                <div class="reviewcontent">
-                    <div>
-                        <img src="dist/assets/landing_img/home17.svg" alt="">
-                    </div>
-                    <div class="reviewplus">
-                        <h3>Bill Johnson</h3>
-                        <p><small>Architect</small></p>
-                        <span style="color:gold;">★ ★ ★ ★ ★</span>
-                    </div>
-                </div>
-                <p>This app has redefined how I approach travel planning. Rather than searching multiple sources, I
-                    now have access to a centralized platform that offers curated experiences suited to various
-                    tastes and interests. The design is sleek, navigation is intuitive, and the entire process feels
-                    effortless.</p>
-            </div>
-        </div>
-        </div>
-        <div class="reviewcontrol">
-            <div><img src="dist/assets/landing_img/home19.svg" alt=""></div>
-            <div><img src="dist/assets/landing_img/home20.svg" alt=""></div>
-        </div>
-    </section>
-
-    <section class="newslettersection">
-        <div class="newsletter">
-            <h2>Stay in the Know with <br>
-                Moj Travels</h2>
-            <div class="newsletterform">
-                <div class="newsp">
-                    <p>Wander often. Dream big. Travel smart.</p>
-                </div>
-                <div class="input-group mb-3">
-                    <input type="text" class="form-control" placeholder="Email" aria-label="Email"
-                        aria-describedby="button-addon2">
-                    <button class="btn btn-outline-danger"
-                        style="border-top-left-radius: 10px; border-bottom-left-radius: 0;" type="button"
-                        id="button-addon2">Subscribe</button>
-                </div>
-
-            </div>
-            <div class="news">
-                <p>Subscribe to our newsletter and be the first to discover:</p>
-                <ul>
-                    <li>Exclusive travel deals & honeymoon packages</li>
-                    <li>Expert tips for unforgettable adventures</li>
-                    <li>Hidden gems and must-visit destinations</li>
-                    <li>Special offers just for our subscribers</li>
-                </ul>
-            </div>
-        </div>
-    </section>
-
-    <footer>
-        <div class="footer-content">
-            <div class="footer1">
-                <h3>MOJ</h3>
-                <p>Quality all round</p>
-                <div class="copyright1">&copy; Copyright 2025 Inc</div>
-            </div>
-            <div class="footerSection">
-                <div class="footer-section">
-                    <h3>About</h3>
-                    <p>Our Story</p>
-                    <p>Our Team</p>
-                    <p>Resources</p>
-                    <p>Terms of Service</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Support</h3>
-                    <p>FAQ</p>
-                    <p>Contact Us</p>
-                    <p>Help Center</p>
-                </div>
-                <div class="footer-section">
-                    <h3>Social</h3>
-                    <p>Instagram</p>
-                    <p>Facebook</p>
-                    <p>Twitter (X)</p>
-                    <div class="copyright2">&copy; Copyright 2025 Inc</div>
-                </div>
-            </div>
-        </div>
-    </footer>
-
+        </footer>
     </div>
     <script src="index.js"></script>
 </body>
