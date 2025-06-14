@@ -16,6 +16,7 @@
 }
 
 header {
+    box-shadow: 0 0 20px rgb(30, 30, 30, 0.5);
     background: var(--White);
     padding: 8px 20px;
     position: sticky;
@@ -41,7 +42,15 @@ header {
     background: var(--Cocoa-Bean);
     color: var(--White);
     border-radius: 20px;
-    padding: 10px 15px;
+    border: none;
+    padding: 10px 44px;
+    font-weight: bold;
+}
+.nav-item.active .nav-link {
+    color: var(--Cocoa-Bean-Bright);
+    /* Brighter Cocoa-Bean for active item */
+    text-decoration: underline;
+    font-weight: bold;
 }
 #navbarNav .btn:hover{
     background: var(--Swiss-Coffee);
@@ -61,7 +70,7 @@ header {
 
 .sectionhero {
     background: url('/dist/assets/about_img/about1.svg') no-repeat center/cover;
-    background-color: rgba(31, 30, 30, 0.4);
+    background-color: rgba(31, 30, 30, 0.7);
     background-blend-mode: overlay;
     height: 100vh;
     width: 100%;
@@ -364,7 +373,6 @@ footer {
         position: relative;
         top: 20px;
     }
-
     .aboutImg img {
         width: 100%;
     }
@@ -373,7 +381,6 @@ footer {
         background: var(--Hint-of-Red);
         padding: 30px 15px;
     }
-
     .sectionservices h2 {
         text-align: center;
         color: var(--Mine-Shaft);
