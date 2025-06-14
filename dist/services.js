@@ -13,3 +13,10 @@ document.querySelectorAll(".nav-link[data-section]").forEach((link) => {
     }
   });
 });
+
+
+const watchVideo = () => {
+  alert("You will be redirected to our officila YouTube handle where you can watch our videos");
+  location.href =
+    "https://www.youtube.com/watch?v=linlz7-Pnvw&pp=0gcJCd4JAYcqIYzv";
+}

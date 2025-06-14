@@ -225,7 +225,7 @@ header {
     background: var(--White);
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); */
     z-index: 200;
     display: none;
 }
@@ -283,7 +283,7 @@ header {
    
 }
 
-.about-content p {
+.aboutP {
     /* max-width: 50%; */
     text-align: justify;
     /* text-align: left; */
@@ -291,7 +291,7 @@ header {
     font-weight: 500;
     color: var(--Mine-Shaft);
     position: relative;
-    top: 30px;
+    top: -10px;
 }
 
 .aboutImg img {
@@ -321,7 +321,7 @@ header {
     width: 100%;
 }
 
-.choosewriteup {
+.choosewriteup, .aboutP {
     text-align: justify;
     margin-top: 30px;
     font-size: 1.2rem;
@@ -450,10 +450,10 @@ header {
     font-weight: 700;
 }
 #newsInp{
-    padding: 13px 10px;
+    padding: 12px 10px;
     border: none;
     outline: none;
-    width: 80%;
+    width: 75%;
 }
 #newsInp:focus{
     background: var(--Hint-of-Red);
@@ -461,6 +461,33 @@ header {
     outline: 2px solid var(--Cocoa-Bean);
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
+}
+
+.modalSuccess{
+    color: #16c60c;
+    font-weight: bold;
+    background: var(--White);
+    box-shadow: 0  0 59px var(--Mine-Shaft);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    margin: 0 50px;
+    padding: 10px;
+    border-radius: 10px;
+    animation: succesBar 0.7s linear 1s forwards;
+    transition: .5s;
+    display: none;
+}
+@keyframes succesBar {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
 }
 
 .newsletterform .btn {
@@ -692,7 +719,7 @@ footer {
         width: 100%;
     }
 
-    .choosewriteup{
+    .choosewriteup, .aboutP{
         line-height: 1.7;
         font-size: 1rem;
     }
