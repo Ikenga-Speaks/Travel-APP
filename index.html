@@ -61,7 +61,7 @@
                                     d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
                             </svg>
                             <input type="text" class="form-control search-input"
-                                placeholder="Enter a place you would like to visit" aria-label="Search">
+                                placeholder="Enter a place you would like to visit" id="search-term" aria-label="Search">
                         </div>
                         <!-- Here is where I called the function -->
                         <div><button onclick="getSearchTerm()" class="btn search-btn">See all Destinations</button></div>
@@ -416,13 +416,26 @@
                     <div class="newsp">
                         <p>Wander often. Dream big. Travel smart.</p>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" id="newsInp"  placeholder="Email" aria-label="Email"
-                            aria-describedby="button-addon2">
+                    <div>
+                        <!-- Please take note on how I restructured the form here - take note of the button type is (submit) not buttton -->
+                        <form action="" id="newsForm">
+                            <input type="text" id="newsInp" placeholder="Email" style="color: #000;">
                         <button class="btn btn-outline-danger"
-                            style="border-top-left-radius: 10px; border-bottom-left-radius: 0;" type="button"
-                            id="button-addon2">Subscribe</button>
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 0; padding: 12px 30px;
+                            position: relative; top: -1px;
+                            "
+                            id="button-addon2" type="submit" >Subscribe</button>
+                        </form>
                     </div>
+                    <!-- This is a simple modal to return success or error submission -->
+                     <div class="modalSuccess">
+                        <div class="modal-content">
+                            <i class="fa-solid fa-xmark" onclick="closeModal()" style="display: flex; justify-content: flex-end; font-size: 1.2rem; color: #000;" id="closeModal"></i>
+                            <!-- <span class="close" >&times;</span> -->
+                            <p id="successMessage">Thank you for subscribing!</p>
+                        </div>
+                     </div>
+                    
 
                 </div>
                 <div class="news">
