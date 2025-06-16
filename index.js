@@ -42,7 +42,32 @@ searchInput.addEventListener("keypress", (event) => {
 // I am adding the function executor to the butto in the index.html
 
 
+// For NewsLetter Val
+// Add this code to all pages that has the newsleteter
+let formNews = document.getElementById("newsForm");
+formNews.addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  const emailInput = document.getElementById("newsInp");
+  const emailValue = emailInput.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let modalSucceshow = document.querySelector(".modalSuccess");
+  if (!emailPattern.test(emailValue)) {
+    alert("Please enter a valid email address.");
+    emailInput.focus();
+  } else {
+   modalSucceshow.style.display = "block";
+   modalSucceshow.scrollIntoView({behavior: "smooth"})
+   setTimeout(() => {
+      modalSucceshow.style.display = "none"
+   }, 5000)
+    formNews.reset();
+  }
+});
 
+const closeModal = () => {
+  let modalSucceshow = document.querySelector(".modalSuccess");
+  modalSucceshow.style.display = "none"
+}
 const BookNowBtn = document.querySelectorAll(".btn-primary");
             let formC = document.querySelector(".formC");
             formC.style.display = "none";
