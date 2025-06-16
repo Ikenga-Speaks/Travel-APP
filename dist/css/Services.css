@@ -65,185 +65,293 @@ header {
 }
 /* dashboard section */
 .dashboard{
-    background: linear-gradient(#1F1E1E, #1f1e1e), 
-    url('/dist/assets/services_img/services_land.png') no-repeat center/cover;
-    /* background-color: rgba(31, 30, 30, 0.4); */
+    background: url("/dist/assets/services_img/service1.svg") no-repeat center/cover;
+    background-color: rgba(85, 85, 85, 0.7);
     background-blend-mode: overlay;
-    height: 100vh;
+    /* height: 50vh; */
     width: 100%;
     color: var(--White);
     font-weight: bold;
-    /* background: linear-gradient(rgb(#1F1E1E)); */
-    
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: center; */
 }
-#the{
-    font-size: 50px;
-    font-weight: 100;
-    margin-left: 90px;
-    padding-top: 420px;
+.dash-writeup{
+    margin-left: 85px;
+    padding: 105px 0;
+    position: relative;
+    top: 15px;
 }
-.textt{
-  padding-top: 10px;
-  margin-left: 90px;  
+.dash-writeup h1{
+    font-size: 3rem;
+    font-weight: 700;
+    /* text-align: center; */
+    color: var(--White);
+    position: relative;
+    /* top: 30px; */
 }
-.trip_btn button{
+.dash-writeup p{
+    font-size: 1.5rem;
+    font-weight: 500;
+    /* text-align: center; */
+    color: var(--White);
+    position: relative;
+    /* top: 50px; */
+}
+.search-btn {
     background: var(--Cocoa-Bean);
     color: var(--White);
-    border-radius: 20px;
-    padding: 10px 15px;
-    margin-top: 25px;
-    margin-left: 90px;
+    border-radius: 50px;
+    border: none;
+    padding: 15px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: background-color 0.3s ease-in-out;
+    cursor: pointer;
     position: relative;
-    width: 200px;
+    top: 20px;
+
 }
-.trip_btn button:hover{
-   background: var(--Swiss-Coffee);
+
+.search-btn:hover {
+    background: var(--Swiss-Coffee);
     color: var(--Cocoa-Bean);
-    transition: 0.3s ease-in-out;
 }
 
 /* Services container */
- .services{
-    display: grid;
-    grid-template-columns: auto auto auto;
-    justify-content:space-evenly;
-    background-color: var(--White);
- }
- .services div{
-    width: 450px;
-    height: 300px;
-    background-color: var(--Cocoa-Bean);
-    border-radius: 20px;
-    margin: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    color: var(--White);
- }
- .h3bc{
-    /* align-items: center; */
-    /* justify-content: center; */
-    /* padding-left: 1000px; */
+.ourservices {
+    padding: 45px 5px;
     text-align: center;
-    margin: 40px 0px;
- }
-  .service_set:hover{
-    background: var(--Swiss-Coffee);
-    color: var(--Cocoa-Bean);
-    transition: 0.3s ease-in-out;
- }
-  .service_set2:hover{
-    background: var(--Swiss-Coffee);
-    color: var(--Cocoa-Bean);
-    transition: 0.3s ease-in-out;
- }
-  .service_set3:hover{
-    background: var(--Swiss-Coffee);
-    color: var(--Cocoa-Bean);
-    transition: 0.3s ease-in-out;
- }
-  .service_set4:hover{
-    background: var(--Swiss-Coffee);
-    color: var(--Cocoa-Bean);
-    transition: 0.3s ease-in-out;
- }
-  .service_set5:hover{
-    background: var(--Swiss-Coffee);
-    color: var(--Cocoa-Bean);
-    transition: 0.3s ease-in-out;
- }
- .service_set6{
-    background: var(--Swiss-Coffee);
-    color: var(--Cocoa-Bean);
-    transition: 0.3s ease-in-out;
- }
- /* we are the best container */
- .sectionabout {
-        background: var(--White);
-        padding: 20px;
-    }
+}
 
-    .sectionabout h2 {
-        font-size: 1.5rem;
-        font-weight: 600;
-        color: var(--Mine-Shaft);
-        text-align: center;
-        padding: 10px 0;
-    }
+.ourservices h2 {
+    text-align: center;
+    color: var(--Mine-Shaft);
+    padding: 25px 0;
+    font-weight: 600;
+    font-size: 2rem;
+}
 
- .about-content {
+.ourservice-content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    text-align: center;
+    margin: 0 70px;
+}
+
+.ourservice-content div {
+    background: var(--Mine-Shaft);
+    color: var(--White);
+    padding: 0 15px;
+    padding-top: 20px;
+    border-radius: 15px;
+}
+
+.ourservice-content p {
+    padding-bottom: 8px;
+}
+
+.ourservice-content div img {
+    padding: 15px 0;
+}
+
+.ourservice-content div h3 {
+    padding: 15px 0;
+}
+ 
+/* we are the best container */
+.about {
+    background: var(--Hint-of-Red);
+    padding: 40px 0;
+
+}
+.about h2{
+    font-size: 2rem;
+    font-weight: 600;
+    color: var(--Mine-Shaft);
+    text-align: center;
+    margin-bottom: -10px;
+}
+.about-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    /* justify-content: space-around; */
-    /* align-items: center; */
     gap: 20px;
     /* max-width: 1200px; */
     margin: 0 45px;
 }
 
-.about-content p {
-    /* max-width: 50%; */
+.aboutImg video {
+    width: 100%;
+    
+}
+.aboutImg i{
+    position: relative;
+    top: 200px;
+    left: 300px;
+    font-size: 3rem;
+}
+.aboutP h3{
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+.aboutP{
+    margin-bottom: 45px;
+    position: relative;
+    top: 45px;
+}
+
+.aboutP p{
     text-align: justify;
-    text-align: left;
+    /* text-align: left; */
     font-size: 1rem;
     font-weight: 500;
     color: var(--Mine-Shaft);
     position: relative;
-    top: 50px;
+    top: 20px;
+}
+.clientreview{
+    margin: 25px 0;
+}
+.clientreview h2 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 600;
+}
+.review {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px 65px;
 }
 
-.aboutImg img {
-    background: url('/dist/assets/services_img/video_Cover.png');
-    width: 100%;
-        background-blend-mode: overlay;
+.review div {
+    background: var(--Hint-of-Red);
+    margin: 20px 25px;
+}
 
-    /* height: 100vh; */
-    
+.reviewcontent {
+    display: flex;
+}
+
+.reviewplus {
+    position: relative;
+    left: -20px
+}
+
+.reviewplus p {
+    position: relative;
+    left: -30px;
+    bottom: 13px;
+}
+
+.reviewplus span {
+    position: relative;
+    bottom: 35px;
+}
+
+.reviewtable p {
+    margin: 0 30px;
+    margin-bottom: 35px;
+}
+
+.reviewcontrol {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px;
+}
+
+.reviewcontrol div img {
+    max-width: 50px;
 }
 
 
- /* footer container */
- .newslettersection{
+/* footer container */
+.newslettersection {
     background: var(--Linear-gradient);
     padding: 30px 60px;
     color: var(--White);
     margin-bottom: 30px;
 }
-.newsletter h2{
+
+.newsletter h2 {
     font-size: 3rem;
     font-weight: 700;
 }
-.newsletterform{
+
+.newsletterform {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
 }
-.newsletterform .newsp{
+
+.newsletterform .newsp {
     font-size: 1rem;
     font-weight: 700;
 }
-.newsletterform input{
-    margin-left: 180px;
+#newsInp{
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    width: 75%;
 }
-.newsletterform .btn{
+#newsInp:focus{
+    background: var(--Hint-of-Red);
+    transition: .4s;
+    outline: 2px solid var(--Cocoa-Bean);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.modalSuccess{
+    color: #16c60c;
+    font-weight: bold;
+    background: var(--White);
+    box-shadow: 0  0 59px var(--Mine-Shaft);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    margin: 0 50px;
+    padding: 10px;
+    border-radius: 10px;
+    animation: succesBar 0.7s linear 1s forwards;
+    transition: .5s;
+    display: none;
+}
+@keyframes succesBar {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.newsletterform .btn {
     /* border-top-left-radius: 20px; */
     position: relative;
     right: 8px;
     background: var(--Cocoa-Bean);
     color: var(--White);
+    background: var(--Cocoa-Bean);
+    color: var(--primary-white);
+    padding: 13px 20px;
+    border: none;
+    position: relative;
+    left: -10px;
+    border-top-left-radius: 21px;
+    cursor: pointer;
 }
-.newsletterform .btn:hover{
+
+.newsletterform .btn:hover {
     background: var(--Swiss-Coffee);
     color: var(--Cocoa-Bean);
     transition: 0.3s ease-in-out;
 }
-.news{
+
+.news {
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -281,63 +389,6 @@ footer {
 .footer-section .copyright2{
     display: none;
 }
-/* Reviw container */
-
-.clientreview h2 {
-    text-align: center;
-}
-
-.review {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    margin: 20px 65px;
-}
-
-.review div {
-    background: var(--Hint-of-Red);
-    margin: 20px 25px;
-}
-
-.reviewcontent {
-    display: flex;
-}
-
-.reviewplus {
-    position: relative;
-    left: -20px
-}
-
-.reviewplus p {
-    position: relative;
-    left: -30px;
-    bottom: 13px;
-}
-
-.reviewplus span {
-    position: relative;
-    bottom: 35px;
-}
-
-.reviewtable p {
-    margin: 0 30px;
-    margin-bottom: 25px;
-}
-
-.reviewtable1 {
-    display: none;
-}
-
-.reviewcontrol {
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    margin: 30px;
-}
-
-.reviewcontrol div img {
-    max-width: 50px;
-}
 
 
 
@@ -357,10 +408,32 @@ footer {
         position: relative;
         margin-left: auto;
     }
+    .dash-writeup{
+        margin-left: 0;
+        padding: 50px 0;
+        text-align: center;
+    }
+
+    .dash-writeup h1{
+        font-size: 3rem;
+        font-weight: 700;
+        /* text-align: center; */
+        color: var(--White);
+    }
+
+    .dash-writeup p{
+        font-size: 1.5rem;
+        font-weight: 500;
+        /* text-align: justify; */
+        color: var(--White);
+        position: relative;
+        /* top: 50px; */
+    }
     
-     .sectionabout {
-        background: var(--White);
-        padding: 20px;
+    .sectionabout {
+        padding-top: 30px;
+       
+        
     }
 
     .sectionabout h2 {
@@ -368,7 +441,9 @@ footer {
         font-weight: 600;
         color: var(--Mine-Shaft);
         text-align: center;
-        padding: 10px 0;
+        /* padding: 5px 0; */
+        /* display: none; */
+        margin-bottom: -15px;
     }
 
     .about-content {
@@ -376,101 +451,38 @@ footer {
         grid-template-columns: 1fr;
         gap: 15px;
         margin: 0 20px;
+        /* margin-bottom: 15px; */
     }
 
-    .about-content p {
-        text-align: justify;
-        font-size: 0.9rem;
-        font-weight: 500;
-        color: var(--Mine-Shaft);
+
+    .aboutImg video {
+        width: 100%;
+    }
+    .aboutImg i{
         position: relative;
-        top: 20px;
+        top: 160px;
+        left: 240px;
+        font-size: 3rem;
+ }
+    .ourservice-content {
+        display: block;
+        margin: 0 15px;
     }
 
-    .aboutImg img {
-        width: 100%;
+    .clientreview {
+        padding: 30px 0;
     }
-    .our-service div{
-        display: grid;
-        grid-template-columns: auto;
-        gap: 15px;
-        align-items: center;
-        width: auto;
-
-    }
-
-
-     .servicescontent {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 25px;
-        margin: 0 20px;
-    }
-
-    .service-item {
-        background: var(--Swiss-Coffee);
-        padding: 15px;
-        border: 1px solid #ddd;
-        border-radius: 5px;
-    }
-
-    .service-item h3 {
-        font-size: 0.9rem;
-        font-weight: 550;
-        color: var(--Mine-Shaft);
-    }
-
-    .service-item p {
-        font-size: 0.75rem;
-        font-weight: 500;
-        color: var(--Mine-Shaft);
-    }
-
-    .service-item img {
-        margin-bottom: 8px;
-    }
-    .clientreview div{
-        display: grid;
-        grid-template-columns: auto;
-        width: auto;
-    }
-/* 
-    .sectionteam {
-        background: var(--White);
-        padding: 20px;
-    }
-
-    .sectionteam h2 {
-        text-align: center;
-        padding: 15px 0;
-        color: var(--Mine-Shaft);
-        font-size: 1.5rem;
-        font-weight: 600;
-    }
-
-    .team-content {
-        display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 5px;
-        margin: 0 20px;
-    }
-
-    .team-member {
-        text-align: center;
-    }
-
-    .team-member h3 {
-        font-size: 0.9rem;
-        font-weight: 550;
-        color: var(--Mine-Shaft);
-    }
-
-    .team-member img {
-        width: 100%;
-        height: auto;
-        
+    /* .clientreview h2{
+        margin-bottom: -20px 0;
     } */
-     .newslettersection {
+
+    .review {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        place-content: center;
+    }
+
+    .newslettersection {
         background: var(--Linear-gradient);
         padding: 20px 30px;
         color: var(--White);

@@ -202,41 +202,92 @@ header {
     width: 100%;
     height: auto;
 }
-.newslettersection{
+.newslettersection {
     background: var(--Linear-gradient);
     padding: 30px 60px;
     color: var(--White);
     margin-bottom: 30px;
 }
-.newsletter h2{
+
+.newsletter h2 {
     font-size: 3rem;
     font-weight: 700;
 }
-.newsletterform{
+
+.newsletterform {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 
 }
-.newsletterform .newsp{
+
+.newsletterform .newsp {
     font-size: 1rem;
     font-weight: 700;
 }
-.newsletterform input{
-    margin-left: 180px;
+#newsInp{
+    padding: 12px 10px;
+    border: none;
+    outline: none;
+    width: 75%;
 }
-.newsletterform .btn{
+#newsInp:focus{
+    background: var(--Hint-of-Red);
+    transition: .4s;
+    outline: 2px solid var(--Cocoa-Bean);
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.modalSuccess{
+    color: #16c60c;
+    font-weight: bold;
+    background: var(--White);
+    box-shadow: 0  0 59px var(--Mine-Shaft);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 40%;
+    margin: 0 50px;
+    padding: 10px;
+    border-radius: 10px;
+    animation: succesBar 0.7s linear 1s forwards;
+    transition: .5s;
+    display: none;
+}
+@keyframes succesBar {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.newsletterform .btn {
     /* border-top-left-radius: 20px; */
     position: relative;
     right: 8px;
     background: var(--Cocoa-Bean);
     color: var(--White);
+    background: var(--Cocoa-Bean);
+    color: var(--primary-white);
+    padding: 13px 20px;
+    border: none;
+    position: relative;
+    left: -10px;
+    border-top-left-radius: 21px;
+    cursor: pointer;
 }
-.newsletterform .btn:hover{
+
+.newsletterform .btn:hover {
     background: var(--Swiss-Coffee);
     color: var(--Cocoa-Bean);
     transition: 0.3s ease-in-out;
 }
-.news{
+
+.news {
     font-size: 0.8rem;
     font-weight: 600;
 }
@@ -343,6 +394,7 @@ footer {
         text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
         position: relative;
         top: 30px;
+        text-align: center;
     }
 
     .sectionabout {

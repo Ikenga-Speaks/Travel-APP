@@ -21,7 +21,7 @@ document.querySelectorAll(".nav-link[data-section]").forEach((link) => {
   });
 });
 
-// This function is to validate the serach feature on the Home Page
+// This function is to validate the search feature on the Home Page
 let searchInput = document.getElementById("search-term");
 const getSearchTerm = () => {
   if (searchInput.value === "") {

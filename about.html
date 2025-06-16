@@ -137,13 +137,25 @@
                     <div class="newsp">
                         <p>Wander often. Dream big. Travel smart.</p>
                     </div>
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control" placeholder="Email" aria-label="Email"
-                            aria-describedby="button-addon2">
+                    <div>
+                        <!-- Please take note on how I restructured the form here - take note of the button type is (submit) not buttton -->
+                        <form action="" id="newsForm">
+                            <input type="text" id="newsInp" placeholder="Email" style="color: #000;">
                         <button class="btn btn-outline-danger"
-                            style="border-top-left-radius: 10px; border-bottom-left-radius: 0;" type="button"
-                            id="button-addon2">Subscribe</button>
+                            style="border-top-left-radius: 10px; border-bottom-left-radius: 0; padding: 12px 30px;
+                            position: relative; top: -1px;
+                            "
+                            id="button-addon2" type="submit" >Subscribe</button>
+                        </form>
                     </div>
+                    <!-- This is a simple modal to return success or error submission -->
+                     <div class="modalSuccess">
+                        <div class="modal-content">
+                            <i class="fa-solid fa-xmark" onclick="closeModal()" style="display: flex; justify-content: flex-end; font-size: 1.2rem; color: #000;" id="closeModal"></i>
+                            <!-- <span class="close" >&times;</span> -->
+                            <p id="successMessage">Thank you for subscribing!</p>
+                        </div>
+                     </div>
 
                 </div>
                 <div class="news">

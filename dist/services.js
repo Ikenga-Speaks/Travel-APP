@@ -20,3 +20,25 @@ const watchVideo = () => {
   location.href =
     "https://www.youtube.com/watch?v=linlz7-Pnvw&pp=0gcJCd4JAYcqIYzv";
 }
+
+// For NewsLetter Val
+// Add this code to all pages that has the newsleteter
+let formNews = document.getElementById("newsForm");
+formNews.addEventListener("submit", (ev) => {
+  ev.preventDefault();
+  const emailInput = document.getElementById("newsInp");
+  const emailValue = emailInput.value.trim();
+  const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  let modalSucceshow = document.querySelector(".modalSuccess");
+  if (!emailPattern.test(emailValue)) {
+    alert("Please enter a valid email address.");
+    emailInput.focus();
+  } else {
+   modalSucceshow.style.display = "block";
+   modalSucceshow.scrollIntoView({behavior: "smooth"})
+   setTimeout(() => {
+      modalSucceshow.style.display = "none"
+   }, 5000)
+    formNews.reset();
+  }
+});
