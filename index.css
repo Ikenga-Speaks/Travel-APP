@@ -284,20 +284,25 @@ header {
 }
 
 .aboutP {
-    /* max-width: 50%; */
     text-align: justify;
-    /* text-align: left; */
-    font-size: 1rem;
-    font-weight: 500;
     color: var(--Mine-Shaft);
     position: relative;
-    top: -10px;
+    font-family: Manrope;
+    line-height: 2;
+    font-size: 1.1rem;
+    font-weight: 600
 }
 
 .aboutImg img {
     width: 100%;
     /* height: 100vh; */
-    
+    transition: transform 0.9s ease-in-out, background-color 0.9s ease-in-out; 
+}
+.aboutImg img:hover{
+    transition: .7s;
+    transform: rotate(-10deg);
+    cursor: pointer;
+    filter: brightness(80%);
 }
 
 .choose h2 {
@@ -316,15 +321,23 @@ header {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     margin: 0 45px;
+    
+}
+.choosecontent img:hover{
+    transition: .7s;
+    transform: rotate(10deg);
+    cursor: pointer;
+    filter: brightness(80%);
 }
 .chooseimg img{
     width: 100%;
+    transition: transform 0.9s ease-in-out, background-color 0.9s ease-in-out;
 }
 
-.choosewriteup, .aboutP {
+.choosewriteup{
     text-align: justify;
-    margin-top: 30px;
-    font-size: 1.2rem;
+    margin-top: 12px;
+    font-size: 1.1rem;
     font-weight: 500;
     font-family: Manrope;
     line-height: 2;
@@ -352,11 +365,18 @@ header {
 }
 
 .ourservice-content div {
-    background: var(--Mine-Shaft);
+    /* background: var(--Mine-Shaft); */
+    background-color: var(--Cocoa-Bean);
     color: var(--White);
     padding: 0 15px;
     padding-top: 20px;
     border-radius: 15px;
+    transition: transform 0.9s ease-in-out, background-color 0.9s ease-in-out;
+}
+.ourservice-content div:hover{
+    background: var(--Swiss-Coffee);
+    color: var(--Cocoa-Bean);
+    transition: 0.3s ease-in-out;
 }
 
 .ourservice-content p {
@@ -385,6 +405,14 @@ header {
 .review div {
     background: var(--Hint-of-Red);
     margin: 20px 25px;
+}
+.reviewtable{
+    transition: transform 0.9s ease-in-out, background-color 0.9s ease-in-out;
+}
+.reviewtable:hover{
+    transform: scale(1.08);
+    transition: .7s;
+    cursor: pointe
 }
 
 .reviewcontent {

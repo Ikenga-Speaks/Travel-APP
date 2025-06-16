@@ -26,7 +26,7 @@ let searchInput = document.getElementById("search-term");
 const getSearchTerm = () => {
   if (searchInput.value === "") {
     alert("Please Enter a location")
-  }else{
+  } else {
     alert(`Sorry, there are no results matching '${searchInput.value}' right now`)
   };
   searchInput.value = ""
@@ -55,11 +55,11 @@ formNews.addEventListener("submit", (ev) => {
     alert("Please enter a valid email address.");
     emailInput.focus();
   } else {
-   modalSucceshow.style.display = "block";
-   modalSucceshow.scrollIntoView({behavior: "smooth"})
-   setTimeout(() => {
+    modalSucceshow.style.display = "block";
+    modalSucceshow.scrollIntoView({ behavior: "smooth" })
+    setTimeout(() => {
       modalSucceshow.style.display = "none"
-   }, 5000)
+    }, 5000)
     formNews.reset();
   }
 });
@@ -69,31 +69,48 @@ const closeModal = () => {
   modalSucceshow.style.display = "none"
 }
 const BookNowBtn = document.querySelectorAll(".btn-primary");
-            let formC = document.querySelector(".formC");
-            formC.style.display = "none";
-            let houseNameF = document.getElementById("houseName");
-            let houseLocationF = document.getElementById("houseLocation");
-            let housePriceF = document.getElementById("housePrice")
-            BookNowBtn.forEach((btn) => {
-                btn.addEventListener("click", () => {
-                  const card = btn.closest(".card");
-                  const houseName = card.querySelector(".card-title").textContent;
-                  const houseLocation = card.querySelector(".card-text").textContent
-                  const housePrice = card.querySelector(".card-amount").textContent;
-                   
-                    document.getElementById("houseLocate").textContent = houseName;
-                    houseNameF.value = houseName;
-                    houseLocationF.value = houseLocation;
-                    housePriceF.value = housePrice;
-                    formC.style.display = "block";
-                    // This script makes it possible for scrolling to where the container is
-                    formC.scrollIntoView({behavior: "smooth"});
+let formC = document.querySelector(".formC");
+formC.style.display = "none";
+let houseNameF = document.getElementById("houseName");
+let houseLocationF = document.getElementById("houseLocation");
+let housePriceF = document.getElementById("housePrice")
+BookNowBtn.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    const card = btn.closest(".card");
+    const houseName = card.querySelector(".card-title").textContent;
+    const houseLocation = card.querySelector(".card-text").textContent
+    const housePrice = card.querySelector(".card-amount").textContent;
 
-                    document.getElementById("formEl").addEventListener("submit", (event) => {
-                        event.preventDefault();
-                        // Change this alert to something else - like a modal success
-                        alert("Thanks for your booking confirmation - An agent will get back to you shortly");
-                        formC.style.display = "none";
-                    })
-                })
-            })
+    document.getElementById("houseLocate").textContent = houseName;
+    houseNameF.value = houseName;
+    houseLocationF.value = houseLocation;
+    housePriceF.value = housePrice;
+    formC.style.display = "block";
+    // This script makes it possible for scrolling to where the container is
+    formC.scrollIntoView({ behavior: "smooth" });
+
+    document.getElementById("formEl").addEventListener("submit", (event) => {
+      event.preventDefault();
+      // Change this alert to something else - like a modal success
+      alert("Thanks for your booking confirmation - An agent will get back to you shortly");
+      formC.style.display = "none";
+    })
+  })
+});
+
+// Load other comments
+let lastComment = document.querySelector(".reviewtable1");
+let allCommentsH = document.querySelectorAll(".reviewtable")
+let previousComments = document.getElementById("comment")
+let comment2 = document.getElementById("comment2")
+const loadNewComment = () => {
+  lastComment.style.display = "block";
+allCommentsH.style.display = "none";
+// comment2.style.display = "none";
+};
+
+// Show Prev Comment
+const showPrevComments = () => {
+   lastComment.style.display = "none";
+allCommentsH.style.display = "block";
+}

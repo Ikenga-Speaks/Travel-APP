@@ -74,7 +74,7 @@ header {
     font-weight: bold;
 }
 .dash-writeup{
-    margin-left: 85px;
+    text-align: center;
     padding: 105px 0;
     position: relative;
     top: 15px;
@@ -138,11 +138,18 @@ header {
 }
 
 .ourservice-content div {
-    background: var(--Mine-Shaft);
+    background: var(--Cocoa-Bean);
     color: var(--White);
     padding: 0 15px;
     padding-top: 20px;
     border-radius: 15px;
+    transition: transform 0.9s ease-in-out, background-color 0.9s ease-in-out;
+}
+.ourservice-content div:hover {
+    background: var(--Swiss-Coffee);
+    color: var(--Cocoa-Bean);
+    transition: 0.3s ease-in-out;
+    
 }
 
 .ourservice-content p {
@@ -160,7 +167,6 @@ header {
 /* we are the best container */
 .about {
     background: var(--Hint-of-Red);
-    padding: 40px 0;
 
 }
 .about h2{
@@ -169,24 +175,41 @@ header {
     color: var(--Mine-Shaft);
     text-align: center;
     margin-bottom: -10px;
+    padding-top: 35px;
+
+}
+#aboutC{
+    margin: 30px 0;
+    padding: 0 45px;
 }
 .about-content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+   display:grid;
+   grid-template-columns: auto auto;
     gap: 20px;
     /* max-width: 1200px; */
-    margin: 0 45px;
+    /* padding: 0 45px; */
+    /* position: relative;
+    top: 35px; */
 }
-
-.aboutImg video {
+#videoCover{
+    width: 13%;
+   margin-left: 290px;
+    margin-top: -600px;
+     /* left: 20px; */
+     /* margin-top: 22px; */
+}
+#imageCover{
     width: 100%;
-    
 }
-.aboutImg i{
-    position: relative;
-    top: 200px;
-    left: 300px;
+.videoicon{
+    /* display: flex; */
+    /* align-content: center; */
+    /* position: relative;
+    left: 260px;
+    bottom: 300px;
     font-size: 3rem;
+    color: var(--Cocoa-Bean);
+    width: 13%; */
 }
 .aboutP h3{
     text-align: center;
@@ -194,15 +217,15 @@ header {
     font-weight: 600;
 }
 .aboutP{
-    margin-bottom: 45px;
+    /* margin-bottom: 45px; */
     position: relative;
-    top: 45px;
+    top: 10px;
 }
 
 .aboutP p{
     text-align: justify;
     /* text-align: left; */
-    font-size: 1rem;
+    font-size: 1.2rem;
     font-weight: 500;
     color: var(--Mine-Shaft);
     position: relative;
@@ -222,6 +245,7 @@ header {
     gap: 10px;
     margin: 20px 65px;
 }
+
 
 .review div {
     background: var(--Hint-of-Red);
@@ -246,6 +270,14 @@ header {
 .reviewplus span {
     position: relative;
     bottom: 35px;
+}
+.reviewtable{
+    transition: transform 0.9s ease-in-out, background-color 0.9s ease-in-out;
+}
+.reviewtable:hover{
+    transform: scale(1.08);
+    transition: .7s;
+    cursor: pointe
 }
 
 .reviewtable p {
@@ -429,21 +461,19 @@ footer {
         position: relative;
         /* top: 50px; */
     }
-    
-    .sectionabout {
-        padding-top: 30px;
-       
-        
+
+    .about{
+        padding: 30px 0;
     }
 
-    .sectionabout h2 {
-        font-size: 1.5rem;
+    .about h2 {
+        font-size: 2rem;
         font-weight: 600;
         color: var(--Mine-Shaft);
         text-align: center;
         /* padding: 5px 0; */
         /* display: none; */
-        margin-bottom: -15px;
+        margin-bottom: -45px;
     }
 
     .about-content {
@@ -454,16 +484,31 @@ footer {
         /* margin-bottom: 15px; */
     }
 
-
-    .aboutImg video {
-        width: 100%;
+    /* .about-image{
+        margin-bottom: -100px;
+    } */
+    /* .videoicon{
+        display: flex;
+       min-height: 20vh;
+    } */
+    #videoCover{
+        margin-left: 120px;
+        margin-top: -290px;
+       /* left: 20px; */
+        /* margin-top: 22px; */
     }
-    .aboutImg i{
+    #imageCover{
+        width: 100%;
+        margin-top: 50px;
+
+    }
+    /* .about-image{
+        display: block;
+    } */
+    .aboutP {
         position: relative;
-        top: 160px;
-        left: 240px;
-        font-size: 3rem;
- }
+        margin-bottom: 85px;
+    }
     .ourservice-content {
         display: block;
         margin: 0 15px;
