@@ -174,7 +174,7 @@ footer {
     display: none;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 1024px) {
     .form{
         margin: 10px 40px;
     }
