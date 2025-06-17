@@ -42,6 +42,18 @@ searchInput.addEventListener("keypress", (event) => {
 // I am adding the function executor to the butto in the index.html
 
 
+
+// Add active Style on Scroll
+let haederScroll = document.getElementById("header");
+const scrollIntoHeadre = () => {
+  if (window.scrollY > 0) {
+    haederScroll.classList.add("addStyle");
+  }else if (window.scrollY <= 0) {
+    haederScroll.classList.remove("addStyle");
+  }
+};
+
+window.addEventListener("scroll", scrollIntoHeadre)
 // For NewsLetter Val
 // Add this code to all pages that has the newsleteter
 let formNews = document.getElementById("newsForm");

@@ -31,15 +31,18 @@ body {
 }
 
 header {
-    background: rgba(30, 30, 30, 0.5);
+    /* background: rgba(30, 30, 30, 0.5); */
     /* background: var(--Cocoa-Bean-Bright); */
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 100;
-    box-shadow: 0 0 20px rgb(30, 30, 30, 0.5);
-
+    /* box-shadow: 0 0 20px rgb(30, 30, 30, 0.5); */
+}
+.addStyle{
+        background: rgba(30, 30, 30, 0.5);
+     box-shadow: 0 0 20px rgb(30, 30, 30, 0.5);
 
 }
 
